@@ -1,0 +1,18 @@
+{
+    "extends": ["eslint:recommended", "prettier"],
+    "parserOptions": {
+      "ecmaVersion": 8,
+      "sourceType": "module"
+    },
+    "plugins": ["prettier"],
+    "parser": "typescript-eslint-parser",
+    "rules": {
+      "semi": "off",
+      "prettier/prettier": [
+        "warn",
+        {
+          "parser": "typescript"
+        }
+      ]
+    }
+  }
