@@ -2,8 +2,8 @@ import * as faker from 'faker';
 import * as _ from 'lodash';
 import * as moment from 'moment';
 import Config from './../../utils/mock/Config';
-import { PostAttributes } from '../../../models/interface/posts/PostAttributes';
-import {Options} from './../../../models/interface/posts/getPostById';
+import { PostAttributes } from '../../../models/interfaces/posts/PostAttributes';
+import {Options} from './../../../models/interfaces/posts/getPostById';
 
 import {
     POST_MODEL_VISIBLE_PROPERTIES,

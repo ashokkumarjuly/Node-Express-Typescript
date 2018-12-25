@@ -1,7 +1,7 @@
 import * as SequelizeStatic from "sequelize";
 import {DataTypes, Sequelize} from "sequelize";
-import {PostAttributes} from "../../models/interface/posts";
-import {PostInstance} from "./_postInstance";
+import {PostAttributes} from "../../models/interfaces/posts";
+import {PostInstance} from "./_instances";
 
 export default (sequelize: Sequelize, dataTypes: DataTypes):
   SequelizeStatic.Model<PostInstance, PostAttributes> => {
@@ -17,17 +17,8 @@ export default (sequelize: Sequelize, dataTypes: DataTypes):
     body: dataTypes.STRING,
     deleted_at: dataTypes.DATE
   }, {
-    tableName: 'posts',
-    createdAt: 'created_at',
-    updatedAt: 'updated_at',
-    indexes: [],
-    paranoid: true,
-    underscored: true
+    tableName: 'posts'
   });
-
-  // Post.afterDestroy((post: PostInstance, options: Object) => {
-  //   sequelize.models.Comment.destroy({where: {post_id: post.dataValues.id}, individualHooks: true});
-  // });
 
   return Post;
 }

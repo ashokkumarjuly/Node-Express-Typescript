@@ -7,8 +7,8 @@ import getPostById from './getPostById';
 
 export default (config: Config, router: any): Router => {
     // const router: Router = enhancedRouter(config);
-    router.get('/posts', getPosts(config));
-    router.get('/posts/:post_id', getPostById(config));
+    router.get('/', getPosts(config));
+    router.get('/:post_id', getPostById(config));
 
 
     return router;

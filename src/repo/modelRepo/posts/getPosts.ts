@@ -1,5 +1,5 @@
 import Config from './../../utils/sequelize/Config';
-import { Options } from './../../../models/interface/posts/getPosts';
+import { Options } from './../../../models/interfaces/posts/getPosts';
 import paginate from './../../../presenter/utils/paginate';
 import createOrderObject from '../../../lib/createOrderObject';
 import { API_ROUTE_V1, POST_MODEL_VISIBLE_PROPERTIES, DEFAULT_PAGINATION_LIMIT, DEFAULT_PAGINATION_OFFSET, DEFAULT_SORT_ORDER } from './../../../constants';

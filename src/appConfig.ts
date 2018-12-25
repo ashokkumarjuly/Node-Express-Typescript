@@ -118,8 +118,8 @@ export default {
                     collate: 'utf8_general_ci'
                 },
                 timestamp: true,
-                created_at: 'createdAt',
-                updated_at: 'updatedAt'
+                created_at: 'created_at',
+                updated_at: 'updated_at'
             }
         },
         operatorsAliases: process.env.DB_OPERATOR_ALIASES || envVars.DB_OPERATOR_ALIASES

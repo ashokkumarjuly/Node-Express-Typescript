@@ -1,18 +1,36 @@
 {
-    "extends": ["eslint:recommended", "prettier"],
+    "extends": [
+        "eslint-config-airbnb-base",
+        "eslint-config-prettier",
+        "eslint:recommended",
+        "prettier"
+    ],
     "parserOptions": {
-      "ecmaVersion": 8,
-      "sourceType": "module"
+        "ecmaVersion": 2018,
+        "sourceType": "module"
     },
-    "plugins": ["prettier"],
+    "plugins": [
+        "import",
+        "eslint-plugin-prettier",
+        "eslint-plugin-babel",
+        "prettier"
+    ],
     "parser": "typescript-eslint-parser",
     "rules": {
-      "semi": "off",
-      "prettier/prettier": [
-        "warn",
-        {
-          "parser": "typescript"
-        }
-      ]
+        "semi": "off",
+        "prettier/prettier": [
+            "warn",
+            {
+                "parser": "typescript"
+            }
+        ],
+        "no-param-reassign": [
+            2,
+            {
+                "props": false
+            }
+        ],
+        "no-console": 0,
+        "space-before-function-paren": 0,
     }
-  }
+}

@@ -1,7 +1,7 @@
 import * as faker from 'faker';
 import * as _ from 'lodash';
 import * as moment from 'moment';
-import { Options } from '../../../models/interface/posts/getPosts';
+import { Options } from '../../../models/interfaces/posts/getPosts';
 import paginate from '../../../presenter/utils/paginate';
 import createOrderObject from '../../../lib/createOrderObject';
 import {
@@ -31,7 +31,7 @@ export default () => {
                 title: faker.lorem.sentences(1),
                 body: faker.lorem.sentences(10),
                 created_at: (start > 1) ? dateTime : moment().subtract((start + 1 * 60), 'minutes').format("YYYY-MM-DD HH:mm:ss"),
-                updated_at: 'updated_at'
+                updated_at: dateTime
             };
             rows.push(_.pick(post, POST_MODEL_VISIBLE_PROPERTIES));
 

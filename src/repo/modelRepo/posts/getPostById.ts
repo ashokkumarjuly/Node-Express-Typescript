@@ -1,8 +1,8 @@
-import Signature from './../../../models/interface/posts/getPostById';
+import Signature from './../../../models/interfaces/posts/getPostById';
 import Config from './../../utils/sequelize/Config';
-import { Options } from './../../../models/interface/posts/getPostById';
+import { Options } from './../../../models/interfaces/posts/getPostById';
 import { POST_MODEL_VISIBLE_PROPERTIES } from './../../../constants';
-import { PostInstance } from './../../../models/sequelize/_instance';
+import { PostInstance } from './../../../models/sequelize/_instances';
 import ModelNotFoundError from './../../../lib/errors/ModelNotFoundError';
 
 export default (config: Config) => {
