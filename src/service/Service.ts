@@ -1,5 +1,5 @@
 
-import {GetPostByIdSignature, GetPostsSignature } from './../repo/interface/posts';
+import {GetPostByIdSignature, GetPostsSignature } from './../models/interface/posts';
 import CommonServiceSignature from './utils/CommonServiceSignature';
 
 export default interface Service {

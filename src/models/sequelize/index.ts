@@ -1,7 +1,7 @@
 import * as fs from 'fs';
 import * as path from 'path';
 import * as SequelizeStatic from 'sequelize';
-import { PostAttributes } from './../../repo/interface/posts'
+import { PostAttributes } from './../../models/interface/posts'
 import { PostInstance } from './_postInstance';
 import { Sequelize } from 'sequelize';
 

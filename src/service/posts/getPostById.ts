@@ -1,7 +1,7 @@
 
 import Config from '../Config';
-import Signature from './../../repo/interface/posts/getPostById';
-import {Options} from './../../repo/interface/posts/getPostById';
+import Signature from './../../models/interface/posts/getPostById';
+import {Options} from './../../models/interface/posts/getPostById';
 
 export default (config: Config): Signature =>
   async ({id}: Options) => {

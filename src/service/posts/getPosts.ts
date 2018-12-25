@@ -1,7 +1,7 @@
 
 import Config from '../Config';
-import Signature from './../../repo/interface/posts/getPosts';
-import {Options} from './../../repo/interface/posts/getPosts';
+import Signature from './../../models/interface/posts/getPosts';
+import {Options} from './../../models/interface/posts/getPosts';
 
 export default (config: Config): Signature =>
   async ({limit, offset, order} : Options) => {

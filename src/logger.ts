@@ -12,7 +12,7 @@ const logger = winston.createLogger({
     // - Write all logs error (and below) to `error.log`.
     //
     new winston.transports.File({ filename: `${appConfig.winston.winstonDirectory}/error.log`, level: appConfig.winston.level }),
-    new winston.transports.File({ filename: 'combined.log' })
+    new winston.transports.File({ filename: `${appConfig.winston.winstonDirectory}/'combined.log` })
   ]
 });
 

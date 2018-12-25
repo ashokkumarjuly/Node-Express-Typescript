@@ -1,6 +1,6 @@
 import * as SequelizeStatic from "sequelize";
 import {DataTypes, Sequelize} from "sequelize";
-import {PostAttributes} from "../../repo/interface/posts";
+import {PostAttributes} from "../../models/interface/posts";
 import {PostInstance} from "./_postInstance";
 
 export default (sequelize: Sequelize, dataTypes: DataTypes):

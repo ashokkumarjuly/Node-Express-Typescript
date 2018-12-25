@@ -1,5 +1,5 @@
 
-import {GetPostByIdSignature, GetPostsSignature} from './modelRepo/posts';
+import {GetPostByIdSignature, GetPostsSignature} from './../models/interface/posts';
 // import SendEmailSignature from './mailRepo/sendEmail/Signature';
 
 export interface ModelRepoInterface {

@@ -7,7 +7,7 @@ import { models as sequelizeModels, sequelize } from './../models/sequelize';
 
 import nodemailerRepo from './utils/nodemailer/facade';
 
-import mockRepo from './utils/faker/facade'
+import mockRepo from './utils/mock/facade'
 
 const modelRepoFactory = (name: string): ModelRepoInterface => {
     switch (name) {

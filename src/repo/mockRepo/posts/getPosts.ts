@@ -1,7 +1,7 @@
 import * as faker from 'faker';
 import * as _ from 'lodash';
 import * as moment from 'moment';
-import { Options } from '../../interface/posts/getPosts';
+import { Options } from '../../../models/interface/posts/getPosts';
 import paginate from '../../../presenter/utils/paginate';
 import createOrderObject from '../../../lib/createOrderObject';
 import {
